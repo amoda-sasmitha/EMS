@@ -5,6 +5,15 @@ body{
     
 }
 
+.navbar{
+    margin: 0px;
+    z-index: 2;
+    border-radius: 0px;
+    padding: 0px;
+    height: 40px !important;
+    border: none !important;
+    background-color:#1a2226 !important;
+}
 
 #sidebar-wrapper {
 
@@ -47,7 +56,7 @@ transition: margin 0.25s ease-out;
     margin-left : -260px;  
 }
 .sidebar-header{
-    margin-top: 30px; 
+    margin-top: 50px; 
     padding: 20px;
     border-bottom: 2px solid rgba(255,255,255, 0.1);
      border-top: 2px solid rgba(255,255,255, 0.1);
@@ -105,6 +114,10 @@ transition: margin 0.25s ease-out;
     padding-left: 20px !important;
 }
 
+.sidebarBtn{
+    margin: 8px 5px;
+}
+
 .Empsub a i{
     width: 20px !important;
     height: 20px !important;
@@ -138,3 +151,4 @@ padding: 20px 0px !important;
     background-color: #2d3336;
     color : rgba(255,255,255,0.5)
 }
+

@@ -2,8 +2,16 @@
     box-sizing: border-box;
     padding: 10px 2%;
     background-color: white;
-     box-shadow:  0 0.375em 1em rgba(0, 0, 0, 0.1);
+    
    
+}
+
+.bottomCont{
+    box-sizing: border-box;
+   padding: 0px;
+    margin: 0px;
+    background-color: white;
+    box-shadow:  0 0.375em 1em rgba(0, 0, 0, 0.1);
 }
 
 #contentHeader{
@@ -12,7 +20,7 @@
     background-color: white;
     padding-bottom:  10px;
       box-shadow:  0 0.1em 1em rgba(0, 0, 0, 0.1);
-   margin-bottom: 1%;
+   margin-bottom: 15px;
 }
 
 body{
@@ -21,5 +29,52 @@ body{
 
 .container-flex{
     margin: 1%;
+    margin-top: 1.5% !important;
    
 }
+
+#search-header.cont{
+    margin: 0px !important;
+    font-size: 1.2em;
+    
+}
+
+#search-bar{
+    box-shadow: none !important;
+    padding: 0.75% 2% 0.75% 2%;
+    border-bottom: 5px solid rgba( 0,0,0,0.1);
+    cursor: pointer;
+}
+
+
+
+#search-toggle-btn{
+   cursor: pointer;
+    float: right;
+}
+
+#searchbarCollapse{
+    max-height: 0px;
+    transition: all 0.5s ease-out;
+    padding-top : 1.5%; 
+    
+}
+
+#searchbarCollapse.active{
+    max-height: 300px;
+    transition: all 1s ease-out;
+}
+
+@media only screen and (max-width: 425px) {
+ #contentHeader{ 
+    margin-bottom: 5px;
+    }
+    
+#search-bar{
+  
+    border-bottom: 0px solid rgba( 0,0,0,0.1);
+    
+}
+    
+    
+  }
