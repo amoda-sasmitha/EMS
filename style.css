@@ -6,6 +6,9 @@ body{
 }
 
 .navbar{
+       position: fixed;
+  top: 0;
+  width: 100%;
     margin: 0px;
     z-index: 2;
     border-radius: 0px;
