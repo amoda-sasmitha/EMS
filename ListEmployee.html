@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styleLE.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
+    </head>
+<body>
+    <div class = "d-flex">
+    <div  id = "sidebar-wrapper" >
+        <div class = "sidebar-header">
+          <div id="hleft">
+            <img src = "images/user.jpg" width="60px" > 
+           </div>
+             <div id="hright">
+            <span id="AcName">Amoda Sasmitha</span>
+             <span id="AcType">Administrator</span>
+            <span id="AcStatus"><i class="fa fa-circle" aria-hidden="true"></i> Online</span>
+            </div>
+        </div>
+            <ul class = "list-unstyled " >
+                <li><a href="#" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href ="#" onClick = "employeeDropdown()"    ><i class="fa fa-id-card-o" aria-hidden="true"></i>Employee</a>
+                  <ul id="employeeSubmenu">
+   					<li class="Empsub">
+   						<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Add Employee</a>
+   					</li>
+   					<li class="Empsub">
+   						<a href="#"><i class="fa fa-th-list" aria-hidden="true"></i>List Employee</a>
+   					</li >
+   				</ul> 
+                </li>
+            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Payroll</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>Atendance</a></li>
+            <li><a href="#"><i class="fa fa-university" aria-hidden="true"></i>Deparment</a></li>
+            </ul>
+       
+    </div> 
+    
+    
+    
+    
+    <div id="page-wrapper" >  
+       <div class="container-flex" >
+        
+               <div class="col-md-12 col-sm-12 col-xs-12" style=" padding-bottom : 10px;" >
+            <button class="btn btn-info" onClick="sidebarToggle()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                   
+                   
+           </div>
+           
+           <div class="col-md-12 col-sm-12 col-xs-12" id = "contentHeader" >
+         <h3><strong><i class="fa fa-list-alt" aria-hidden="true"></i> Employee List</strong></h3>
+         
+               </div>
+
+           <div class="col-md-12 col-sm-12 col-xs-12 cont" >
+         <h4><strong>Search</strong></h4>
+               </div>
+        
+           
+           
+        <div class = "col-md-12 col-sm-12 col-xs-12 table-responsive cont">
+        <table class="table table-striped " style="font-size: 1.1em">
+  <thead style="background-color: rgba(1, 50, 67, 1) ;color : white;">
+    <tr >
+      <th scope="col" width="5%">ID</th>
+      <th scope="col" width="20%">Employee</th>
+      <th scope="col" width="20%">Department</th>
+      <th scope="col" width="15%">Mobile</th>
+      <th scope="col" width="10%">Status</th>
+       <th scope="col" width="20%">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Padula Pankaja</td>
+      <td>Finance</td>
+      <td>0714476098</td>
+      <td><button class="btn btn-success btn-xs"><strong>Active</strong></button></td>
+        <td><button class="btn btn-info btn-xs"><strong>View</strong></button>
+            <button class="btn btn-warning btn-xs"><strong>Edit</strong></button>
+            <button class="btn btn-danger btn-xs"><strong>Delete</strong></button>
+        </td>
+    </tr>
+     <tr>
+      <td>2</td>
+      <td>Pubudu Arosha </td>
+      <td>HRM</td>
+      <td>0715676768</td>
+      <td><button class="btn btn-success btn-xs"><strong>Active</strong></button></td>
+        <td><button class="btn btn-info btn-xs"><strong>View</strong></button>
+            <button class="btn btn-warning btn-xs"><strong>Edit</strong></button>
+            <button class="btn btn-danger btn-xs"><strong>Delete</strong></button>
+        </td>
+    </tr>
+      
+      <tr>
+      <td>2</td>
+      <td>Wathasha </td>
+      <td>Finance</td>
+      <td>0754543123</td>
+      <td><button class="btn btn-success btn-xs"><strong>Active</strong></button></td>
+        <td><button class="btn btn-info btn-xs"><strong>View</strong></button>
+            <button class="btn btn-warning btn-xs"><strong>Edit</strong></button>
+            <button class="btn btn-danger btn-xs"><strong>Delete</strong></button>
+        </td>
+    </tr>
+   
+      
+      
+      
+    
+  </tbody>
+</table>
+        </div>
+        
+        </div>
+       
+    </div>
+        </div> 
+    <script>
+    function sidebarToggle() {
+  document.getElementById("sidebar-wrapper").classList.toggle("active");
+  document.getElementById("page-wrapper").classList.toggle("active");
+}
+        
+    function employeeDropdown(){
+        document.getElementById("employeeSubmenu").classList.toggle("active");
+    }
+    </script>
+    
+</body>
+</html>

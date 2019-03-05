@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
+    </head>
+<body>
+    <div class = "d-flex">
+    <div  id = "sidebar-wrapper" >
+        <div class = "sidebar-header">
+          <div id="hleft">
+            <img src = "images/user.jpg" width="60px" > 
+           </div>
+             <div id="hright">
+            <span id="AcName">Amoda Sasmitha</span>
+             <span id="AcType">Administrator</span>
+            <span id="AcStatus"><i class="fa fa-circle" aria-hidden="true"></i> Online</span>
+            </div>
+        </div>
+            <ul class = "list-unstyled " >
+                <li><a href="#" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href ="#" onClick = "employeeDropdown()"    ><i class="fa fa-id-card-o" aria-hidden="true"></i>Employee</a>
+                  <ul id="employeeSubmenu">
+   					<li class="Empsub">
+   						<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Add Employee</a>
+   					</li>
+   					<li class="Empsub">
+   						<a href="#"><i class="fa fa-th-list" aria-hidden="true"></i>List Employee</a>
+   					</li >
+   				</ul> 
+                </li>
+            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Payroll</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>Atendance</a></li>
+            <li><a href="#"><i class="fa fa-university" aria-hidden="true"></i>Deparment</a></li>
+            </ul>
+       
+    </div> 
+    
+    
+    
+    
+    <div id="page-wrapper" >  
+       <div class="container-flex" >
+        
+               <div class="col-md-12 mx-auto" style="margin-top: 15px;" >
+            <button class="btn btn-info" onClick="sidebarToggle()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+           </div>
+           
+           <div class="col-md-6" >
+         <h2><strong>Lorem Ipsum</strong></h2>
+            <hr>
+           
+            <p style="font-size : 1.0em">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+               </div> <div class="col-md-6" >
+    <h2 ><strong>Where can I get some?</strong></h2>
+            <hr>
+           
+            <p style="font-size : 1.0em">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           </div>
+        </div>
+        
+        <div class = "pt-md-5">
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+   
+       
+    </div>
+        </div> 
+    <script>
+    function sidebarToggle() {
+  document.getElementById("sidebar-wrapper").classList.toggle("active");
+  document.getElementById("page-wrapper").classList.toggle("active");
+}
+        
+    function employeeDropdown(){
+        document.getElementById("employeeSubmenu").classList.toggle("active");
+    }
+    </script>
+    
+</body>
+</html>

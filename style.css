@@ -1,0 +1,140 @@
+body{
+    font-family: Segoe UI;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+#sidebar-wrapper {
+
+ position: fixed;
+ width : 260px;
+ height: 100%;
+ top : 0;
+ z-index: 1;
+    margin-left: 0px;
+color : whitesmoke;
+background-color: #161d20 ;  
+transition: margin 0.25s ease-out;
+}
+
+#AcName{
+    font-size: 1em;
+    font-weight: 500;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-bottom : 2px;  
+}
+
+#AcType, #AcStatus{
+    font-size: 0.9em;
+    overflow: hidden;
+    color : rgba(255,255,255,0.7);
+    padding-left:10px;
+    
+}
+
+#AcStatus i {
+    color : #2ecc71 !important;
+    padding-right: 2px;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+
+#sidebar-wrapper.active{
+    margin-left : -260px;  
+}
+.sidebar-header{
+    margin-top: 30px; 
+    padding: 20px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+     border-top: 2px solid rgba(255,255,255, 0.1);
+}
+.sidebar-header img{
+    
+    border-radius: 30px;
+}
+.sidebar-header span, img{
+    display: block;
+    vertical-align: middle;
+   
+    
+}
+#hleft, #hright{
+    display: inline-block;
+    
+}
+#hleft{
+    width: 60px;
+}
+
+#page-wrapper {
+    width : 100%;
+    padding-left: 260px; 
+    box-sizing: border-box;
+    transition: all 0.25s ease-out;
+}
+
+#page-wrapper.active{
+    padding-left: 0px;
+}
+
+#sidebar-wrapper ul {
+    padding: 0px 0px;
+    
+    
+}
+
+#sidebar-wrapper ul li{
+    display: block;
+    padding: 10px 0px;
+     background-color: #161d20;
+  
+    
+}
+#employeeSubmenu {
+ display: none;
+ font-size: 0.9em;
+ 
+    
+}
+.Empsub{
+    background-color: #1a2226 !important;
+    padding-left: 20px !important;
+}
+
+.Empsub a i{
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 1em !important;
+    line-height: 20px !important;
+    
+}
+
+
+#employeeSubmenu.active {
+ display: block;
+padding: 20px 0px !important;
+}
+
+#sidebar-wrapper ul li a{
+    color : rgba(255,255,255,0.8);
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#sidebar-wrapper ul li a i {
+    margin: 0px 10px 0px 20px;
+    font-size: 1.1em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #2d3336;
+    color : rgba(255,255,255,0.5)
+}

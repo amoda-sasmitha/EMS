@@ -1,0 +1,25 @@
+.cont{
+    box-sizing: border-box;
+    padding: 10px 2%;
+    background-color: white;
+     box-shadow:  0 0.375em 1em rgba(0, 0, 0, 0.1);
+   
+}
+
+#contentHeader{
+    box-sizing: border-box;
+    padding: 0px 2%;
+    background-color: white;
+    padding-bottom:  10px;
+      box-shadow:  0 0.1em 1em rgba(0, 0, 0, 0.1);
+   margin-bottom: 1%;
+}
+
+body{
+    background-color: #fafafa !important;
+}
+
+.container-flex{
+    margin: 1%;
+   
+}
